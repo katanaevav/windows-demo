@@ -38,6 +38,16 @@ a {
   margin: -1px;
 }
 
+.manage-windows {
+  background-color: #a1b2d1;
+}
+
+.manage-windows__button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+}
+
 .windows {
   position: relative;
 }
@@ -50,14 +60,31 @@ a {
 
 .window-header {
   background-color: #0062b8;
+  display: flex;
+  justify-content: space-between;
+  cursor: move;
 }
 
-.window-header-text {
+.window-header__text {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.window-header__buttons {
+  display: flex;
+}
+
+.window-header__button {
+  border: none;
+  padding: 10px;
+  background-color: #0062b8;
+}
+
+.window-header__button--close-button:hover {
+  background-color: #c50909;
 }
 
 .window-data {

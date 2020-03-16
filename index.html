@@ -11,12 +11,21 @@
 </head>
 
 <body>
+
+  <section class="manage-windows">
+    <h2 class="manage-windows-header visually-hidden">Область управления окнами</h2>
+    <button class="manage-windows__button manage-windows__new-window">Новое окно</button>
+  </section>
+
   <section class="windows">
     <h2 class="windows-header visually-hidden">Область показа окон</h2>
     
-    <div class="window" id="window-1" style="left: 10px; top: 10px;">
+    <!-- <div class="window" id="window-1" style="left: 10px; top: 10px;">
       <div class="window-header">
-        <h2 class="window-header-text">Заголовок окна 1</h2>
+        <h2 class="window-header__text">Заголовок окна 1</h2>
+        <div class="window-header__buttons">
+          <button class="window-header__button window-header__button--close-button">X</button>
+        </div>
       </div>
       <div class="window-data"></div>
       <div class="window-status">
@@ -24,19 +33,37 @@
       </div>
     </div>
     
-    <div class="window" id="window-2" style="left: 40px; top: 40px;">
+    <div class="window" id="window-2" style="left: 60px; top: 60px;">
       <div class="window-header">
-        <h2 class="window-header-text">Заголовок окна 2</h2>
+        <h2 class="window-header__text">Заголовок окна 2</h2>
+        <div class="window-header__buttons">
+          <button class="window-header__button window-header__button--close-button">X</button>
+        </div>
+      </div>
+      <div class="window-data"></div>
+      <div class="window-status">
+        <p class="window-status-text">Строка состояния</p>
+      </div>
+    </div> -->
+
+  </section>
+
+  <template id="window-template">
+    <div class="window" style="left: 10px; top: 10px;">
+      <div class="window-header">
+        <h2 class="window-header__text">Заголовок окна</h2>
+        <div class="window-header__buttons">
+          <button class="window-header__button window-header__button--close-button">X</button>
+        </div>
       </div>
       <div class="window-data"></div>
       <div class="window-status">
         <p class="window-status-text">Строка состояния</p>
       </div>
     </div>
+  </template>
 
-  </section>
-
-  <script src="js/moveWindow.js"></script>
+  <script src="js/setupWindow.js"></script>
   <script src="js/clickWindow.js"></script>
 </body>
 
