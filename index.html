@@ -19,37 +19,10 @@
 
   <section class="windows">
     <h2 class="windows-header visually-hidden">Область показа окон</h2>
-    
-    <!-- <div class="window" id="window-1" style="left: 10px; top: 10px;">
-      <div class="window-header">
-        <h2 class="window-header__text">Заголовок окна 1</h2>
-        <div class="window-header__buttons">
-          <button class="window-header__button window-header__button--close-button">X</button>
-        </div>
-      </div>
-      <div class="window-data"></div>
-      <div class="window-status">
-        <p class="window-status-text">Строка состояния</p>
-      </div>
-    </div>
-    
-    <div class="window" id="window-2" style="left: 60px; top: 60px;">
-      <div class="window-header">
-        <h2 class="window-header__text">Заголовок окна 2</h2>
-        <div class="window-header__buttons">
-          <button class="window-header__button window-header__button--close-button">X</button>
-        </div>
-      </div>
-      <div class="window-data"></div>
-      <div class="window-status">
-        <p class="window-status-text">Строка состояния</p>
-      </div>
-    </div> -->
-
   </section>
 
   <template id="window-template">
-    <div class="window" style="left: 10px; top: 10px;">
+    <div class="window" style="left: 10px; top: 10px; height: 269px; width: 470px;">
       <div class="window-header">
         <h2 class="window-header__text">Заголовок окна</h2>
         <div class="window-header__buttons">
@@ -58,7 +31,8 @@
       </div>
       <div class="window-data"></div>
       <div class="window-status">
-        <p class="window-status-text">Строка состояния</p>
+        <p class="window-status__text">Строка состояния</p>
+        <div class="window-status__resize-element"></div>
       </div>
     </div>
   </template>
