@@ -35,8 +35,11 @@ var onMoveWindow = function (evt, wnd, draggedItem) {
       top = (top > wnd.offsetParent.offsetHeight - wnd.offsetHeight) ? wnd.offsetParent.offsetHeight - wnd.offsetHeight : top;
       left = (left > wnd.offsetParent.offsetWidth - wnd.offsetWidth) ? wnd.offsetParent.offsetWidth - wnd.offsetWidth : left;
 
-      wnd.style.top = top + 'px';
-      wnd.style.left = left + 'px';
+      // if((startCoords.x >= wnd.offsetLeft && startCoords.x <= wnd.offsetLeft + wnd.offsetWidth) && (startCoords.y >= wnd.offsetTop + wnd.offsetParent.offsetTop && startCoords.y <= wnd.offsetTop + wnd.offsetHeight + wnd.offsetParent.offsetTop)) {
+        wnd.style.top = top + 'px';
+        wnd.style.left = left + 'px';
+      // }
+      
     };
 
     var onMouseUp = function (upEvt) {
@@ -90,8 +93,11 @@ var onResizeWindow = function (evt, wnd, resizeItem) {
     height = (height > wnd.offsetParent.offsetHeight - wnd.offsetTop) ? wnd.offsetParent.offsetHeight - wnd.offsetTop : height;
     width = (width > wnd.offsetParent.offsetWidth - wnd.offsetLeft) ? wnd.offsetParent.offsetWidth - wnd.offsetLeft : width;
 
-    wnd.style.height = height + 'px';
-    wnd.style.width = width + 'px';
+    // if((startCoords.x >= wnd.offsetLeft && startCoords.x <= wnd.offsetLeft + wnd.offsetWidth) && (startCoords.y >= wnd.offsetTop + wnd.offsetParent.offsetTop && startCoords.y <= wnd.offsetTop + wnd.offsetHeight + wnd.offsetParent.offsetTop)) {
+      wnd.style.height = height + 'px';
+      wnd.style.width = width + 'px';
+    // }
+    
   };
 
   var onMouseUp = function (upEvt) {
